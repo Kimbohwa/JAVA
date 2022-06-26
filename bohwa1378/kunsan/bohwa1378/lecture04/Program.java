@@ -4,6 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import kunsan.bohwa1378.lecture05.DevideByZeroHandling;
 import ksnu.bohwa1378.lecture07.*; //패키지 내의 어떤 클래스를 부를 지까지 써야 함
+import ksnu.bohwa1378.lecture08.*;
 
 public class Program {
 	public void runFunctions() {
@@ -36,6 +37,7 @@ public class Program {
         System.out.println("7) 안전한 프로그램");
         System.out.println("8) 학생 성적 처리 프로그램(1차원 배열)");
         System.out.println("9) 클래스 기반 Book 관리 프로그램");
+        System.out.println("10) 대학 구성원 관리 시스템");
         System.out.println("0) 종료");
         System.out.print("선택 : ");
     }
@@ -77,6 +79,10 @@ public class Program {
             case 9:
             	BookManager test9 = new BookManager();
             	test9.runProgram();
+            	break;
+            case 10:
+            	UnivManagement test10 = new UnivManagement();
+            	test10.runProgram();
             	break;
             case 0:
         	    break;
